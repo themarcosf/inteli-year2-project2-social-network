@@ -1,0 +1,71 @@
+.ranking {
+    display: flex;
+    justify-content: space-between;
+
+
+    .textRanking {
+        color: #0A1034;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .myScore {
+        padding: 20px;
+        align-items: center;
+
+        .myPoints {
+            justify-content: end;
+            color: #0A1034;
+            padding: 10px;
+        }
+    }
+}
+
+.cardUser {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    border: 1px solid #9A9A9A;
+    border-radius: 10px;
+    background-color: #1F53E4;
+    margin-bottom: 16px;
+    justify-content: space-between;
+    color: #FFFFFF;
+
+    .starMyCard {
+        align-items: center;
+    }
+}
+
+
+.rankingUsers {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #0672CB;
+
+    .cardUsers {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        border: 1px solid #9A9A9A;
+        border-radius: 10px;
+        background-color: #DAEDFF;
+        margin-bottom: 16px;
+
+        .starCard {
+            align-items: center;
+
+        }
+    }
+
+}

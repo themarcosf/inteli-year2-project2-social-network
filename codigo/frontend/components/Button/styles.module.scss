@@ -1,0 +1,54 @@
+.dellButton {
+  display: flex;
+
+  button {
+    border: none;
+    border-radius: 9px;
+    height: 36px;
+    padding: 0 8px;
+    cursor: pointer;
+  }
+
+  .default {
+    background-color: var(--primary);
+    border-radius: var(--border-radius);
+    border-style: none;
+    height: 45px;
+    color: white;
+  }
+
+  :disabled {
+    opacity: 0.4;
+  }
+
+  .secundary {
+    // background-color: c.$secundary;
+    // color: c.$primary;
+    // border: solid 1px c.$primary;
+  }
+
+  .cancel {
+    // background-color: c.$highlight-light;
+    font-weight: bold;
+    // color: c.$warning;
+    // border: solid 1px c.$warning;
+  }
+
+  .terceary {
+    // background-color: c.$highlight-light;
+    // color: c.$secundary;
+    // border: solid 1px c.$highlight-light;
+  }
+
+  .small {
+    width: 80px;
+  }
+
+  .medium {
+    width: 120px;
+  }
+
+  .large {
+    width: 200px;
+  }
+}

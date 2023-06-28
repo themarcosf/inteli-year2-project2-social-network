@@ -1,0 +1,90 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "sqlite"
+  url       = env("DATABASE_URL1")
+}
+
+model Project {
+  projectId           String    @id
+  name                String
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+  tags                String
+  roles               String
+  description         String
+  start               DateTime
+  end                 DateTime
+  endSubscription     DateTime
+  coleaderId          String?
+  applies             Apply[]
+  coleader            User?     @relation("Coleader", fields: [coleaderId], references: [id])
+  ownerId             String
+  owner               User      @relation("Owner", fields: [ownerId], references: [id], onDelete: Cascade)
+  badge               String
+  blockedSubscription Boolean   @default(false)
+  status              String    @default("Pending")
+  feedback            String?
+
+  @@map("projects")
+}
+
+model Tags {
+  id   String @id
+  name String
+
+  @@map("tags")
+}
+
+model User {
+  id               String    @id
+  email            String    @unique
+  name             String?
+  password         String
+  bornDate         DateTime
+  gender           String
+  n_dell           String
+  managerId        String
+  highligths       String    @default("[]")
+  points           Int       @default(0)
+  habilities       String
+  isAdmin          Boolean   @default(false)
+  photoURL         String?
+  area             String    @default("Software Engineer")
+  linkedin         String?
+  projects         Project[] @relation("Owner")
+  projectsColeader Project[] @relation("Coleader")
+  applies          Apply[]   @relation("Applies")
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+  code             String?   
+
+  @@map("users")
+}
+
+model Habilitie {
+  id   String @id
+  name String
+
+  @@map("habilities")
+}
+
+model Apply {
+  id         String   @id
+  projectId  String
+  userId     String
+  offerName  String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  project    Project  @relation(fields: [projectId], references: [projectId])
+  user       User     @relation("Applies", fields: [userId], references: [id])
+  status     String   @default("Pending")
+  why        String?
+  habilities String?
+  feedback   String?
+  isAccepted Boolean  @default(false)
+
+  @@map("applies")
+}

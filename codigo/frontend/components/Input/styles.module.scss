@@ -1,0 +1,39 @@
+.dellInput {
+    display: flex;
+
+    input {
+        width: max-content;
+        border-radius: 12px;
+        border: solid 3px var(--background);
+        color: black;
+        padding: 8px;
+        outline: 0;
+        background-color: var(--background-tercary);
+        font-size: 1.07rem;
+    }
+
+    .disabled {
+        opacity: 0.4;
+    }
+
+    ::placeholder {
+        color: black;
+        opacity: 0.7;
+    }
+
+    :focus {
+        outline: 0;
+    }
+
+    .small {
+        width: 60%;
+    }
+
+    .medium {
+        width: 80%;
+    }
+
+    .large {
+        width: 100%;
+    }
+}

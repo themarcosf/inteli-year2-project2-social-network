@@ -1,0 +1,1 @@
+{"version":3,"file":"SMTPconfig.js","sourceRoot":"","sources":["../../../../src/Common/SMTP/SMTPconfig.ts"],"names":[],"mappings":";;;AAAA,OAAO,CAAC,QAAQ,CAAC,CAAC,MAAM,EAAE,CAAC;AAEd,QAAA,UAAU,GAAG;IACtB,IAAI,EAAE,gBAAgB;IACtB,IAAI,EAAE,GAAG;IACT,IAAI,EAAE,+BAA+B;IACrC,IAAI,EAAE,OAAO,CAAC,GAAG,CAAC,yBAAyB;CAC9C,CAAA"}

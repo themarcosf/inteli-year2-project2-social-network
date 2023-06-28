@@ -1,0 +1,46 @@
+.container {
+  font-family: "Poppins", sans-serif;
+
+  .row {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .profile {
+    border-radius: 50%;
+  }
+
+  .card {
+    border-radius: 10px;
+    filter: drop-shadow(0 5px 10px 0 #8f8e8e);
+    width: 90%;
+    height: auto;
+    background-color: #fcf9f9;
+    padding: 10px;
+    z-index: 0;
+    position: absolute;
+    left: 2%;
+    right: 2%;
+    margin: auto;
+  }
+
+  .col {
+    position: relative;
+  }
+
+  .col::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; /* Define a distância entre o sublinhado e a palavra */
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #96bdf8; /* Define a cor do sublinhado */
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+  }
+
+  .col:underline {
+    background-color: #96BDF8;
+  }
+}

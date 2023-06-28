@@ -1,0 +1,52 @@
+.cardProject {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+
+    .contentCard {
+        display: flex;
+        flex-direction: column;
+
+        .higher {
+            display: flex;
+            flex-direction: row;
+            border: 5px;
+            justify-content: space-between;
+
+            .cardBackOffice {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .cardDeadline {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                color: #C2A746;
+            }
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: row;
+            border: 5px;
+            justify-content: space-between;
+
+            .cardTags {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .cardMatch {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+                color: #0070C9;
+            }
+        }
+    }
+}

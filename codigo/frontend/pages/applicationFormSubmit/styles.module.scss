@@ -1,0 +1,52 @@
+.applicationFormSubmit {
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    min-height: 100vh;
+    height: 100%;
+
+    .modalApplicationFormSubmit {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        background-color: #FFFFFF;
+        height: 90vh;
+        border-radius: 25px;
+
+        .contentApplicationFormSubmit {
+            display: flex;
+            flex-direction: column;
+            border: 5px;
+
+            .pageTitleApplicationFormsubmit {
+                margin-top: 15px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 50px;
+            }
+
+            .formApplicationFormSubmit {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                justify-content: center;
+
+                .selectRoleInterest {}
+
+                .inputWhyThisVacancy {}
+
+                .inputSkillDevelop {}
+            }
+
+            .submitButton {
+                margin-top: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+    }
+}

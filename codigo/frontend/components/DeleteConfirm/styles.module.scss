@@ -1,0 +1,36 @@
+.container {
+  height: 100%;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+
+  .title {
+    font-size: 18px;
+  }
+
+  .buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+
+    button {
+      border: none;
+      border-radius: 10px;
+      padding: 8px 8px;
+      // color: var(--warning);
+      cursor: pointer;
+    }
+
+    .submit {
+      background-color: var(--warning);
+      color: white;
+    }
+
+    .cancel {
+      border: 2px solid var(--primary);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.dellSelect {
+  select {
+    padding: 8px;
+    height: 40px;
+    border-radius: 9px;
+    border: solid 3px var(--background);
+    color: black;
+    background-color: var(--background-terceary);
+    border-radius: var(--border-radius);
+  }
+
+  :focus-visible {
+    outline: none;
+  }
+
+  .small {
+    width: 40%;
+  }
+
+  .medium {
+    width: 85%;
+  }
+
+  .large {
+    width: 100%;
+  }
+}

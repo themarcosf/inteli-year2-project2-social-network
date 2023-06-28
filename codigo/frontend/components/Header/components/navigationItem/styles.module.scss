@@ -1,0 +1,32 @@
+.navigationItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.7;
+  gap: 8px;
+
+  .iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: var(--terceary);
+    border-radius: 50%;
+
+    .icon {
+      width: 20px;
+      height: auto;
+    }
+  }
+
+  .text {
+    color: var(--secundary);
+    font-size: 14px;
+  }
+}
+
+.active {
+  opacity: 1;
+}
